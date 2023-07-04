@@ -1,0 +1,13 @@
+//extends typography
+
+%heading {
+  font-family: $fontSecondary;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+%paragraph {
+  font-family: $fontPrimary;
+  font-weight: 400;
+}

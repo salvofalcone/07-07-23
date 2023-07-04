@@ -1,0 +1,24 @@
+body {
+  @include reset();
+  // @include flexbox(column, space-between);
+  font-size: 16px;
+  height: 100vh;
+}
+
+.test {
+  background-color: colorShadeDark($primary, 40%);
+  color: colorShadeLight($primary, 90%);
+}
+
+.shadowTest {
+  height: 200px;
+  width: 200px;
+  box-shadow: $elevationSmall;
+  transition: $elevationAnimation;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: $elevationLarge;
+    transform: scale(0.99);
+  }
+}
