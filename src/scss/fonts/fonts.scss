@@ -5,7 +5,29 @@
 }
 
 .heading2 {
+  @extend %heading;
 }
 
 .heading3 {
+  @extend %heading;
+}
+
+.heading4 {
+  @extend %heading;
+}
+
+.heading5 {
+  @extend %heading;
+}
+
+.heading6 {
+  @extend %heading;
+}
+
+.paragraph {
+  @extend %paragraph;
+}
+
+.anchorLink {
+  @extend %anchorLink;
 }

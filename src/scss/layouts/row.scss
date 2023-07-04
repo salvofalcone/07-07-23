@@ -1,0 +1,16 @@
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &.space-between {
+    justify-content: space-between;
+  }
+}
+
+.row-g {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 12px;
+}

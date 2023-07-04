@@ -1,0 +1,128 @@
+.MainColors {
+  @include flexbox(row, center, start);
+}
+
+.Colors {
+  @include flexbox(column, center, start);
+  flex-wrap: wrap;
+}
+
+.light900 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeLight($color--primary, 0%);
+}
+
+.light800 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeLight($color--primary, 10%);
+}
+
+.light700 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeLight($color--primary, 20%);
+}
+
+.light600 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeLight($color--primary, 30%);
+}
+
+.light500 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeLight($color--primary, 40%);
+}
+
+.light400 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeLight($color--primary, 50%);
+}
+
+.light300 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeLight($color--primary, 60%);
+}
+
+.light200 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeLight($color--primary, 70%);
+}
+
+.light100 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeLight($color--primary, 80%);
+}
+
+.light00 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeLight($color--primary, 90%);
+}
+
+.dark900 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeDark($color--primary, 0%);
+}
+
+.dark800 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeDark($color--primary, 10%);
+}
+
+.dark700 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeDark($color--primary, 20%);
+}
+
+.dark600 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeDark($color--primary, 30%);
+}
+
+.dark500 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeDark($color--primary, 40%);
+}
+
+.dark400 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeDark($color--primary, 50%);
+}
+
+.dark300 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeDark($color--primary, 60%);
+}
+
+.dark200 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeDark($color--primary, 70%);
+}
+
+.dark100 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeDark($color--primary, 80%);
+}
+
+.dark00 {
+  width: 80px;
+  height: 40px;
+  background-color: colorShadeDark($color--primary, 90%);
+}

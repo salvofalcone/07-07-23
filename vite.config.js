@@ -7,7 +7,18 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "./src/scss/all.scss";`,
+        additionalData: `
+        @import "./src/scss/helpers/functions.scss";
+        @import "./src/scss/variables/colors.scss";
+        @import "./src/scss/helpers/devices.scss";
+        @import "./src/scss/helpers/mixins.scss";
+        @import "./src/scss/fonts/all.scss";
+        @import "./src/scss/layouts/all.scss";
+        @import "./src/scss/variables/typography.scss";
+        @import "./src/scss/helpers/animations.scss";
+        @import "./src/scss/helpers/elevations.scss";
+        @import "./src/scss/helpers/extends.scss";
+        `,
       },
     },
   },

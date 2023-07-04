@@ -1,16 +1,20 @@
 import "./App.css";
 import "./App.scss";
+import Typography from "./components/Typography/Typography";
+import Colors from "./components/Colors/Colors";
+import Grid from "./components/Grid/Grid";
 
 function App() {
   return (
     <>
-      {/* <div className="test">Ciao</div>
-      <div className="shadowTest">guarda che shadow</div>
-      <h2 className="heading1">Ciao zio</h2> */}
+      <h1 className="heading1 MainTitle">SCSS Library</h1>
 
-      <div className="Typography">
-        <h1 className="heading1">Heading 1</h1>
+      <div className="Top">
+        <Typography />
+        <Colors />
       </div>
+
+      <Grid />
     </>
   );
 }

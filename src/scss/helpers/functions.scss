@@ -1,5 +1,6 @@
 @use "sass:math";
 
+
 $basesize: 16px;
 
 @function rem($px) {
@@ -17,7 +18,9 @@ $basesize: 16px;
 }
 
 // ========================================
+
 $columnCount: 12;
+
 @function column($col) {
   @return math.div(100%, $columnCount) * $col;
 }
