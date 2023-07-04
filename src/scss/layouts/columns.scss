@@ -251,9 +251,53 @@
   }
 }
 
-//====================
+//==========================================================================
 // column gutter
 $gutter: 16px;
 .col-g-1 {
-  width: calc(column(1) - $gutter/2);
+  width: calc(column(1) - $gutter / 2);
+}
+
+.col-g-2 {
+  width: calc(column(2) - $gutter / 2);
+}
+
+.col-g-3 {
+  width: calc(column(3) - $gutter / 2);
+}
+
+.col-g-4 {
+  width: calc(column(4) - $gutter / 2);
+}
+
+.col-g-5 {
+  width: calc(column(5) - $gutter / 2);
+}
+
+.col-g-6 {
+  width: calc(column(6) - $gutter / 2);
+}
+
+.col-g-7 {
+  width: calc(column(7) - $gutter / 2);
+}
+
+.col-g-8 {
+  width: calc(column(8) - $gutter / 2);
+}
+
+.col-g-9 {
+  width: calc(column(9) - $gutter / 2);
+}
+
+.col-g-10 {
+  width: calc(column(10) - $gutter / 2);
+}
+
+.col-g-11 {
+  width: calc(column(11) - $gutter / 2);
+}
+
+.col-g-12 {
+  width: calc(column(12) - $gutter / 2);
 }

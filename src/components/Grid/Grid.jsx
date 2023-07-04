@@ -26,6 +26,20 @@ const Grid = () => {
         <div className="thirdBck col-5 col-sm-5 col-xs-3"> - </div>
         <div className="thirdBck col-2 col-sm-1 col-xs-9"> - </div>
       </div>
+
+      <br />
+
+      <div className="row space-between">
+        <div className="firstBck col-4"> - </div>
+        <div className="firstBck col-5"> - </div>
+      </div>
+
+      <br />
+      <div className="row-g ">
+        <div className="secondBck col-4"> - </div>
+        <div className="secondBck col-2"> - </div>
+        <div className="secondBck col-5"> - </div>
+      </div>
     </div>
   );
 };
