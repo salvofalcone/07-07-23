@@ -10,6 +10,7 @@ export default defineConfig({
         additionalData: `
         @import "./src/scss/helpers/functions.scss";
         @import "./src/scss/variables/colors.scss";
+        @import "./src/scss/variables/layout.scss";
         @import "./src/scss/helpers/devices.scss";
         @import "./src/scss/helpers/mixins.scss";
         @import "./src/scss/fonts/all.scss";

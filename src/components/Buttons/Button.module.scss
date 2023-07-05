@@ -1,0 +1,63 @@
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid;
+  gap: 4px;
+  font-family: $fontSecondary;
+  transition: color 0.3ms ease-in-out, background-color 0.3s ease-in-out;
+
+  &.IconLeft {
+    flex-direction: row-reverse;
+  }
+
+  &.Fill {
+    @include buttonFill(fill);
+    &:hover {
+      @include buttonFill(outline);
+    }
+  }
+
+  &.Outline {
+    @include buttonFill(outline);
+    &:hover {
+      @include buttonFill(fill);
+    }
+  }
+
+  &.xl {
+    @include buttonSize(xl);
+  }
+
+  &.lg {
+    @include buttonSize(lg);
+  }
+
+  &.md {
+    @include buttonSize(md);
+  }
+
+  &.sm {
+    @include buttonSize(sm);
+  }
+
+  &.xs {
+    @include buttonSize(xs);
+  }
+
+  &.Square {
+    border-radius: 50%;
+    width: rem(48px);
+    height: rem(48px); 
+  }
+
+  &.pill {
+    border-radius: 2.4375rem;
+  }
+
+  &.rounded {
+    border-radius: 0.375rem;
+  }
+}

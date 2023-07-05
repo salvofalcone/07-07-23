@@ -59,3 +59,37 @@
 @mixin gradient-background($start-color, $end-color, $direction) {
   background: linear-gradient($direction, $start-color, $end-color);
 }
+
+@mixin buttonFill($theme) {
+  @if ($theme == "outline") {
+    background-color: $color--light;
+    border-color: $color--dark;
+    color: $color--dark;
+    &:active {
+      background-color: rgb(227, 16, 16);
+    }
+  } @else {
+    background-color: $color--dark;
+    color: white;
+    border-color: $color--dark;
+  }
+}
+
+@mixin buttonSize($size) {
+  @if $size == "xl" {
+    padding: rem(19px) rem(55px);
+    font-size: rem(24px);
+  } @else if $size== "lg" {
+    padding: rem(19px) rem(44px);
+    font-size: rem(22px);
+  } @else if $size == "sm" {
+    padding: rem(9px) rem(24px);
+    font-size: rem(16px);
+  } @else if $size == "xs" {
+    padding: rem(8px) rem(20px);
+    font-size: rem(14px);
+  } @else {
+    padding: rem(10px) rem(26px);
+    font-size: rem(18px);
+  }
+}

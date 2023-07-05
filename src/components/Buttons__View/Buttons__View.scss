@@ -1,0 +1,23 @@
+.MainButton {
+  @include flexbox(column, start, space-around);
+  margin: 18px;
+}
+
+.Buttons__Container {
+  @include flexbox(column, center, space-around);
+  gap: 24px;
+}
+
+.Button__Container--Title {
+  margin-top: 24px;
+}
+
+.Buttons__Container--Fill {
+  @include flexbox(row, center, space-around);
+  gap: 24px;
+}
+
+.Buttons__Container--Outline {
+  @include flexbox(row, center, space-around);
+  gap: 24px;
+}
