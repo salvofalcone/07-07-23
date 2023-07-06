@@ -2,8 +2,7 @@
   position: relative;
   display: inline-block;
   width: 100%;
-  /*! DA RIMUOVERE */
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   &.error {
     .input {
@@ -36,7 +35,7 @@
   appearance: none;
   padding: rem(8px);
   border-radius: rem(8px);
-  border: 0.5px solid $color--dark;
+  border: 1px solid $color--medium;
   margin-bottom: 8px;
   position: relative;
 

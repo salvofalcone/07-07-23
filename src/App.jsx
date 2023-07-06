@@ -23,6 +23,7 @@ function App() {
     name: "products",
     id: "products",
     options: [
+      { id: 0, label: "Choose an option ", value: "default" },
       { id: 1, label: "Basket ", value: "basket" },
       { id: 2, label: "Soccer", value: "soccer" },
       { id: 3, label: "Tennis", value: "tennis" },
@@ -57,7 +58,7 @@ function App() {
         {/******************* SELECTION *******************/}
         <InputSelect
           options={options}
-          defaultValue={options[0]}
+          defaultValue={options?.options[0]?.label}
           handleChange={setInputSelectValue}
         />
 
