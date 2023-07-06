@@ -66,12 +66,15 @@
     border-color: $color--dark;
     color: $color--dark;
     &:active {
-      background-color: rgb(227, 16, 16);
+      background-color: $color--medium;
     }
   } @else {
     background-color: $color--dark;
     color: white;
     border-color: $color--dark;
+    &:active {
+      background-color: $color--medium;
+    }
   }
 }
 

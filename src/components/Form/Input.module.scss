@@ -1,0 +1,67 @@
+.inputForm {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  /*! DA RIMUOVERE */
+  margin-bottom: 40px;
+
+  &.error {
+    .input {
+      border: 1px solid $color--danger;
+    }
+
+    .label {
+      color: $color--danger;
+    }
+  }
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  padding: rem(8px);
+  border-radius: rem(8px);
+  border: 0.5px solid $color--dark;
+  margin-bottom: 8px;
+  position: relative;
+
+
+  &:focus {
+    border: 0.5px solid $color--medium;
+    box-shadow: $elevationMedium;
+  }
+}
+
+.errorMessage {
+  color: $color--danger;
+  display: block;
+  font-size: rem(12px);
+}
+
+.icon {
+  position: absolute; 
+  width: rem(32px);
+  height: rem(32px);
+  right: rem(2px);
+  top: rem(1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}

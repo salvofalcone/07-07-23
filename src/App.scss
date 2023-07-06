@@ -18,3 +18,11 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
+.mainForm {
+  @include max-width(500px);
+
+  h3 {
+    text-align: center;
+  }
+}
