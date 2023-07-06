@@ -7,10 +7,11 @@ const InputSelect = (props) => {
     <div className={styles.selectContainer}>
       {options && (
         <select
-          name="products"
-          id="products"
+          name={options?.name}
+          id={options?.id}
           className={styles.selectElement}
-          defaultValue={defaultValue}>
+          defaultValue={defaultValue}
+          onChange={(e) => handleChange(e.target.value)}>
           {options?.options?.map((option) => (
             <option key={option?.id} value={option?.value}>
               {option?.label}

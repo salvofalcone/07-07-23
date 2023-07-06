@@ -1,9 +1,27 @@
 .selectContainer {
   position: relative;
-  // border: 2px solid red;
-  width: 100%;
-  padding: 10px 0;
+  width: 300px;
+  border-radius: 12px;
+  padding: 12px 0;
+
+  &::after {
+    content: "";
+  }
 }
 
 .selectElement {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid $color--medium;
+  padding: 12px 26px;
+  border-radius: 12px;
+
+  &:focus {
+    border: 1px solid $color--dark;
+    box-shadow: $elevationMedium;
+  }
 }

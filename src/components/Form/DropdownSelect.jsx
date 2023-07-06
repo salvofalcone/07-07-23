@@ -27,14 +27,16 @@ const DropdownSelect = (props) => {
       {options && (
         <ul className={`${styles.options} ${open ? styles.open : ""}`}>
           {options?.options?.map((option) => (
-            <li className={styles.option} key={option?.id}>
+            <li
+              className={styles.option}
+              key={option?.id}
+              onClick={() => handleValue(option)}>
               {option?.label}
             </li>
           ))}
         </ul>
       )}
 
-      
       {/* 
       <div
         className={`${styles.options} ${open ? styles.open : ""}`}
@@ -47,7 +49,6 @@ const DropdownSelect = (props) => {
           </ul>
         )}
       </div> */}
-
     </div>
   );
 };
