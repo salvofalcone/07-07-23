@@ -1,10 +1,10 @@
 .Typography {
   @include space(0, 12px);
-  @include flexbox(row, flex-start, space-between);
-  @include size(400px, 200px);
+  @include flexbox(column, center, space-between);
 }
 
 .Heading {
-  @include flexbox(column, flex-start, space-between);
+  @include flexbox(column, center, space-between);
   gap: 12px;
+  margin-bottom: 48px;
 }

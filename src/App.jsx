@@ -1,8 +1,18 @@
 import { useState } from "react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import "./App.css";
 import "./App.scss";
 
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+
+import Header from "./components/Header/Header";
 import Typography from "./components/Typography/Typography";
 import Colors from "./components/Colors/Colors";
 import Grid from "./components/Grid/Grid";
@@ -12,6 +22,7 @@ import InputText from "./components/Form/InputText";
 import InputPassword from "./components/Form/InputPassword";
 import InputSelect from "./components/Form/InputSelect";
 import DropdownSelect from "./components/Form/DropdownSelect";
+import InputCheckbox from "./components/Form/InputCheckbox";
 
 function App() {
   const [inputTextValue, setInputTextValue] = useState();
@@ -32,53 +43,87 @@ function App() {
 
   return (
     <>
-      <form className="mainForm">
-        <h3 className="heading3">FORM</h3>
-        {/******************* INPUT *******************/}
-        <InputText
-          id={"name"}
-          name="name"
-          placeholder="Your name"
-          label={"Insert your name"}
-          errorMessage={"NOOOOOOOO CHE SUCCEDEEEEEEEE?!"}
-          handleChange={setInputTextValue}
-          /* disable */
-        />
+      <Header />
 
-        <InputPassword
-          id={"password"}
-          name="password"
-          placeholder="Your password"
-          label={"Insert your password"}
-          // errorMessage={"NOOOOOOOO CHE SUCCEDEEEEEEEE?!"}
-          handleChange={setInputPasswordValue}
-          /* disable */
-        />
+      <div className="SwiperContainer">
+        <Swiper
+          navigation={true}
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 10,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation]}
+          className="mySwiper">
+          <SwiperSlide>
+            {/* <InputCheckbox checked /> */}
+            <form className="mainForm">
+              <h2 className="heading2">FORM</h2>
 
-        {/******************* SELECTION *******************/}
-        <InputSelect
-          options={options}
-          defaultValue={options?.options[0]?.label}
-          handleChange={setInputSelectValue}
-        />
+              <InputText
+                id={"name"}
+                name="name"
+                placeholder="Your name"
+                label={"Insert your name"}
+                errorMessage={"NOOOOOOOO CHE SUCCEDEEEEEEEE?!"}
+                handleChange={setInputTextValue}
+              />
 
-        <DropdownSelect
-          options={options}
-          handleChange={setInputDropdownValue}
-        />
-      </form>
+              <InputPassword
+                id={"password"}
+                name="password"
+                placeholder="Your password"
+                label={"Insert your password"}
+                // errorMessage={"NOOOOOOOO CHE SUCCEDEEEEEEEE?!"}
+                handleChange={setInputPasswordValue}
+              />
 
-      {/* <h1 className="heading1 MainTitle">SCSS Library</h1> */}
+              <InputSelect
+                options={options}
+                defaultValue={options?.options[0]?.label}
+                handleChange={setInputSelectValue}
+              />
 
-      <Buttons__View />
-      <InputToggle />
+              <DropdownSelect
+                options={options}
+                handleChange={setInputDropdownValue}
+              />
+            </form>
 
-      <div className="Top">
-        <Typography />
-        <Colors />
+            <div className="mainForm">
+              <h2 className="heading2">TOGGLE AND CHECKBOX</h2>
+
+              <InputToggle />
+              <InputCheckbox checked />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Buttons__View />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Typography />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Colors />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Grid />
+          </SwiperSlide>
+        </Swiper>
       </div>
-
-      <Grid />
     </>
   );
 }

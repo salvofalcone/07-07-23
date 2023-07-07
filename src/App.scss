@@ -13,16 +13,21 @@ body {
   text-align: center;
 }
 
-.Top {
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: space-around;
+.SwiperContainer {
+  @include max-width(1080px);
+  margin-top: 80px;
+  border-radius: 12px;
+  box-shadow: $elevationMedium;
+  padding: $p-sm;
 }
 
 .mainForm {
-  @include max-width(500px);
-
-  h3 {
+  @include max-width(400px);
+  margin-bottom: 80px;
+  @include flexbox(column, center, flex-start);
+  gap: 20px;
+  
+  h2 {
     text-align: center;
   }
 }

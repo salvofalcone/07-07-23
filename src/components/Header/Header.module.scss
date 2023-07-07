@@ -1,0 +1,52 @@
+.Header {
+  @include max-width(1080px);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80px;
+  background-color: #ffffff;
+  z-index: 999;
+  padding-inline: $p-sm;
+  box-shadow: $elevationMedium;
+}
+
+.HeaderContainer {
+  @include flexbox(row, center, space-between);
+  padding: $p-sm;
+}
+
+.Logo {
+  height: 40px;
+  width: 40px;
+}
+
+.MenuItem {
+  @include flexbox(row, center, flex-start);
+  @extend %listItem;
+  gap: rem(24px);
+  cursor: pointer;
+
+  &__dropdown {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+
+    &.open {
+      @include flexbox(column, flex-start, space-around);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.MenuItem__subitem {
+  @extend %listItem;
+  @include reset();
+}
+
+.Actions {
+  @include flexbox(row, center, end);
+  gap: 12px;
+  cursor: pointer;
+}

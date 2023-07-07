@@ -1,16 +1,19 @@
 .Grid {
-  @include max-width(1440px);
+  @include max-width(1080px);
   position: relative;
 }
 
 .firstBck {
   background-color: $color--primary;
+  height: 40px;
 }
 
 .secondBck {
   background-color: $color--success;
+  height: 40px;
 }
 
 .thirdBck {
   background-color: $color--warning;
+  height: 40px;
 }

@@ -3,6 +3,7 @@ import InputForm from "./InputForm.jsx";
 import InputPassword from "./InputPassword.jsx";
 import InputSelect from "./InputSelect.jsx";
 import DropdownSelect from "./DropdownSelect.jsx";
+import InputCheckbox from "./InputCheckbox.jsx";
 
 export default {
   InputToggle,
@@ -10,4 +11,5 @@ export default {
   InputPassword,
   InputSelect,
   DropdownSelect,
+  InputCheckbox,
 };

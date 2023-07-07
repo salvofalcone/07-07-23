@@ -1,128 +1,268 @@
 .MainColors {
-  @include flexbox(row, center, start);
+  @include flexbox(column, center, start);
+  gap: 20px;
 }
 
 .Colors {
-  @include flexbox(column, center, start);
+  @include flexbox(row, center, start);
   flex-wrap: wrap;
 }
 
-.light900 {
+.paint {
   width: 80px;
   height: 40px;
-  background-color: colorShadeLight($color--primary, 0%);
 }
 
-.light800 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeLight($color--primary, 10%);
+.primary {
+  background-color: $color--primary;
+
+  &.light900 {
+    background-color: colorShadeLight($color--primary, 0%);
+  }
+
+  &.light800 {
+    background-color: colorShadeLight($color--primary, 10%);
+  }
+
+  &.light700 {
+    background-color: colorShadeLight($color--primary, 20%);
+  }
+
+  &.light600 {
+    background-color: colorShadeLight($color--primary, 30%);
+  }
+
+  &.light500 {
+    background-color: colorShadeLight($color--primary, 40%);
+  }
+
+  &.light400 {
+    background-color: colorShadeLight($color--primary, 50%);
+  }
+
+  &.light300 {
+    background-color: colorShadeLight($color--primary, 60%);
+  }
+
+  &.light200 {
+    background-color: colorShadeLight($color--primary, 70%);
+  }
+
+  &.light100 {
+    background-color: colorShadeLight($color--primary, 80%);
+  }
+
+  &.light00 {
+    background-color: colorShadeLight($color--primary, 90%);
+  }
+
+  &.dark900 {
+    background-color: colorShadeDark($color--primary, 0%);
+  }
+
+  &.dark800 {
+    background-color: colorShadeDark($color--primary, 10%);
+  }
+
+  &.dark700 {
+    background-color: colorShadeDark($color--primary, 20%);
+  }
+
+  &.dark600 {
+    background-color: colorShadeDark($color--primary, 30%);
+  }
+
+  &.dark500 {
+    background-color: colorShadeDark($color--primary, 40%);
+  }
+
+  &.dark400 {
+    background-color: colorShadeDark($color--primary, 50%);
+  }
+
+  &.dark300 {
+    background-color: colorShadeDark($color--primary, 60%);
+  }
+
+  &.dark200 {
+    background-color: colorShadeDark($color--primary, 70%);
+  }
+
+  &.dark100 {
+    background-color: colorShadeDark($color--primary, 80%);
+  }
+
+  &.dark00 {
+    background-color: colorShadeDark($color--primary, 90%);
+  }
 }
 
-.light700 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeLight($color--primary, 20%);
+
+.danger {
+  background-color: $color--danger;
+
+  &.light900 {
+    background-color: colorShadeLight($color--danger, 0%);
+  }
+
+  &.light800 {
+    background-color: colorShadeLight($color--danger, 10%);
+  }
+
+  &.light700 {
+    background-color: colorShadeLight($color--danger, 20%);
+  }
+
+  &.light600 {
+    background-color: colorShadeLight($color--danger, 30%);
+  }
+
+  &.light500 {
+    background-color: colorShadeLight($color--danger, 40%);
+  }
+
+  &.light400 {
+    background-color: colorShadeLight($color--danger, 50%);
+  }
+
+  &.light300 {
+    background-color: colorShadeLight($color--danger, 60%);
+  }
+
+  &.light200 {
+    background-color: colorShadeLight($color--danger, 70%);
+  }
+
+  &.light100 {
+    background-color: colorShadeLight($color--danger, 80%);
+  }
+
+  &.light00 {
+    background-color: colorShadeLight($color--danger, 90%);
+  }
+
+  &.dark900 {
+    background-color: colorShadeDark($color--danger, 0%);
+  }
+
+  &.dark800 {
+    background-color: colorShadeDark($color--danger, 10%);
+  }
+
+  &.dark700 {
+    background-color: colorShadeDark($color--danger, 20%);
+  }
+
+  &.dark600 {
+    background-color: colorShadeDark($color--danger, 30%);
+  }
+
+  &.dark500 {
+    background-color: colorShadeDark($color--danger, 40%);
+  }
+
+  &.dark400 {
+    background-color: colorShadeDark($color--danger, 50%);
+  }
+
+  &.dark300 {
+    background-color: colorShadeDark($color--danger, 60%);
+  }
+
+  &.dark200 {
+    background-color: colorShadeDark($color--danger, 70%);
+  }
+
+  &.dark100 {
+    background-color: colorShadeDark($color--danger, 80%);
+  }
+
+  &.dark00 {
+    background-color: colorShadeDark($color--danger, 90%);
+  }
 }
 
-.light600 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeLight($color--primary, 30%);
-}
 
-.light500 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeLight($color--primary, 40%);
-}
+.success {
+  background-color: $color--success;
 
-.light400 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeLight($color--primary, 50%);
-}
+  &.light900 {
+    background-color: colorShadeLight($color--success, 0%);
+  }
 
-.light300 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeLight($color--primary, 60%);
-}
+  &.light800 {
+    background-color: colorShadeLight($color--success, 10%);
+  }
 
-.light200 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeLight($color--primary, 70%);
-}
+  &.light700 {
+    background-color: colorShadeLight($color--success, 20%);
+  }
 
-.light100 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeLight($color--primary, 80%);
-}
+  &.light600 {
+    background-color: colorShadeLight($color--success, 30%);
+  }
 
-.light00 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeLight($color--primary, 90%);
-}
+  &.light500 {
+    background-color: colorShadeLight($color--success, 40%);
+  }
 
-.dark900 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeDark($color--primary, 0%);
-}
+  &.light400 {
+    background-color: colorShadeLight($color--success, 50%);
+  }
 
-.dark800 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeDark($color--primary, 10%);
-}
+  &.light300 {
+    background-color: colorShadeLight($color--success, 60%);
+  }
 
-.dark700 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeDark($color--primary, 20%);
-}
+  &.light200 {
+    background-color: colorShadeLight($color--success, 70%);
+  }
 
-.dark600 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeDark($color--primary, 30%);
-}
+  &.light100 {
+    background-color: colorShadeLight($color--success, 80%);
+  }
 
-.dark500 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeDark($color--primary, 40%);
-}
+  &.light00 {
+    background-color: colorShadeLight($color--success, 90%);
+  }
 
-.dark400 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeDark($color--primary, 50%);
-}
+  &.dark900 {
+    background-color: colorShadeDark($color--success, 0%);
+  }
 
-.dark300 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeDark($color--primary, 60%);
-}
+  &.dark800 {
+    background-color: colorShadeDark($color--success, 10%);
+  }
 
-.dark200 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeDark($color--primary, 70%);
-}
+  &.dark700 {
+    background-color: colorShadeDark($color--success, 20%);
+  }
 
-.dark100 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeDark($color--primary, 80%);
-}
+  &.dark600 {
+    background-color: colorShadeDark($color--success, 30%);
+  }
 
-.dark00 {
-  width: 80px;
-  height: 40px;
-  background-color: colorShadeDark($color--primary, 90%);
+  &.dark500 {
+    background-color: colorShadeDark($color--success, 40%);
+  }
+
+  &.dark400 {
+    background-color: colorShadeDark($color--success, 50%);
+  }
+
+  &.dark300 {
+    background-color: colorShadeDark($color--success, 60%);
+  }
+
+  &.dark200 {
+    background-color: colorShadeDark($color--success, 70%);
+  }
+
+  &.dark100 {
+    background-color: colorShadeDark($color--success, 80%);
+  }
+
+  &.dark00 {
+    background-color: colorShadeDark($color--success, 90%);
+  }
 }

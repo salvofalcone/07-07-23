@@ -1,5 +1,5 @@
 .MainButton {
-  @include flexbox(column, start, space-around);
+  @include flexbox(column, center, space-around);
   margin: 18px;
 }
 
